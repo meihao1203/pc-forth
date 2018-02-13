@@ -1,0 +1,40 @@
+Notes to users
+
+
+The file directory on the full screen editor can be toggled on and off
+with the "F" command on the main editing menu.  This is not documented
+in the manual.
+
+
+
+The  following  minor deviations from the 83-Standard  have  been 
+reported.
+
+     WORD  doesn't set >IN as specified by the Standard,  in  the 
+     case where the input stream is exhausted.   Also, the format 
+     of  the null byte brought to HERE when the input  stream  is 
+     empty  is incorrect.  Neither of these problems will  affect 
+     normal application software.
+
+     QUIT  displays an "ok" on the standard output,  whereas  the 
+     Standard specifies that QUIT shouldn't print anything.
+
+Until  further notice,  LMI will pay $10.00 for each report of  a 
+newly discovered bug or deviation from the 83-Standard.
+
+Version  2.1  of PC/FORTH is currently in beta-test and  will  be 
+released in July.   In that version all reported deviations  from 
+the  Standard  will be fixed and several new capabilities  added, 
+including:   full  support  for  the  "low-resolution"  16  color 
+graphics  mode  including text output,  the  ability  to  compile 
+source  programs  from  normal text files  or  Wordstar  document 
+files,  and  a new bit-mapped binary overlay loader that can also 
+handle CODE definitions. Warning: in order to make the new loader 
+work, the implementation of DOES> will be slightly modified; this 
+will not affect Standard application programs.   The stacks,  and 
+disk  buffers will be moved to a separate segment to  allow  more 
+dictionary workspace. 
+
+
+
+
